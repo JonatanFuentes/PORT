@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=British&display=swap" rel="stylesheet">
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+     <!-- Compiled and minified CSS -->
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+    <title>Jonatan Fuentes Cerezo</title>
+    <style>
+
+@font-face {
+    font-family: 'SLNTHLE';
+    src: url('silentfont/SLNTHLE.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SLNTHLC';
+    src: url('silentfont/SLNTHLC.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SLNTHLN';
+    src: url('silentfont/SLNTHLN.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+a{
+            font-family: 'SLNTHLN';
+            font-size: 34px;
+            a:hover {
+            color: darkred;
+        }
+        }
+
+h3 {
+    font-family: 'SLNTHLE', serif;
+}
+h {
+    font-family: 'SLNTHLE', serif;
+}
+
+
+
+.model-container {
+    width: 350px; /* Ajusta el tamaño según sea necesario */
+    height: 350px;
+    background: #222; /* Fondo para ver el modelo si el contenedor está vacío */
+    position: relative;
+}
+
+
+body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'British', sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            flex-direction: column;
+            min-height: 100vh; /* Asegura que el footer esté al final de la página */
+        }
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar li {
+            float: left;
+        }
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar li a:hover:not(.active) {
+            background-color: #111;
+        }
+        .navbar .active {
+            background-color: #0489aa;
+        }
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .profile-pic-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .profile-pic {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover; 
+        }
+        .content-block {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            width: 60%;
+        }
+        .content-block img {
+            width: 350px;
+            height: 350px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .content-block p {
+            max-width: 600px;
+        }
+
+        .block-left {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          
+        }
+        .block-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: auto;
+            
+        }
+
+        .model-container {
+            width: 350px; /* Ajusta el tamaño del contenedor */
+            height: 350px;
+            background: #222; /* Fondo para ver el modelo si el contenedor está vacío */
+            position: relative;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Empuja el footer al final de la página */
+            font-family: 'SLNTHLN';
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="#here">Jonatan Fuentes Cerezo</a></li>
+        <li style="float:right"><a href="cont.html">Contact</a></li>
+        <li style="float:right"><a href="project.html">Projects</a></li>
+        <li style="float:right"><a href="about.html">About</a></li>
+        <li style="float:right"><a class="active" href="#here">Home</a></li>
+    </ul>
+
+    <div class="centered-container">
+        <h1>Full Stack Developer</h1>
+        <h2>In my work experiences, I worked mainly as a fullstack developer using PHP, Node.JS, Wordpress and the use of frameworks.</h4>
+        <h2>My main objective is to keep improving and learn new technologies to provide the best solutions.</h4>
+    </div>
+    <div class="profile-pic-container">
+        <img src="perfil.jpg" alt="Mi Foto" class="profile-pic">
+    </div><br><br>
+<hr>
+<div class="centered-container">
+<h1>Knowledge</h1>
+</div>
+<br>
+    <!-- Bloques de imagen y texto -->
+    <div class="content-block block-left">
+        <p></p>
+        <div class="model-container" id="model1">  </div>
+        <h3>PHP</h3>
+    </div>
+    <div class="content-block block-right">
+        <h3>Python</h3>
+        <div class="model-container" id="model2">  </div>
+        
+        <p></p>
+    </div>
+    <div class="content-block block-left">
+        <p></p>
+            <div class="model-container" id="model3">  </div>
+            <h3>Javascript</h3>
+    </div>
+    <div class="content-block block-right">
+        <h3>Java</h3>
+        <div class="model-container" id="model4">  </div>
+        
+        <p></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+
+    <footer>
+        ©2024 Jonatan Fuentes Cerezo
+    </footer>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./main2.js"></script>
+ 
+    <script type="module" src="./main4.js"></script>
+    <script type="module" src="./main3.js"></script>
+</body>
+</html>
